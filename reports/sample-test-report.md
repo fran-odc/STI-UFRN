@@ -41,10 +41,15 @@ Reports: 91% ✅
 ---
 
 ## ⏰ Testing Timeline
+
 Sprint Planning: May 15
+
 Test Design: May 16-17
+
 Test Execution: May 18-23
+
 Defect Reporting: May 24
+
 Retesting: May 25
 
 ---
