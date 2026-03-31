@@ -42,10 +42,15 @@
 ---
 
 ## Regression Test Suite Summary
-Total Test Cases: 47
+
+**Total Test Cases**: 47
+
 Passed: 42 ✅
-Failed: 3 ⚠️
-Blocked: 2 ⏸️
+
+Failed: 4 ⚠️
+
+Blocked: 1 ⏸️
+
 Execution Rate: 89%
 
 **Note:** These examples reflect testing methodology used during STI-UFRN internship. Actual system names and data anonymized.
