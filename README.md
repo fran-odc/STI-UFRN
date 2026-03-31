@@ -52,8 +52,7 @@ Collaborated with **QA insights** in SDLC team environments
 ## 🗂️ Repository Structure
 
 ```
-📁 software-testing-internship-ufrn
-│
+📁 STI-UFRN
 ├── README.md
 ├── test-cases/
 │   └── example-test-cases.md
@@ -67,4 +66,4 @@ Collaborated with **QA insights** in SDLC team environments
 
 This repository summarizes my internship experience.
 All sensitive or proprietary information has been removed.
-💬 Feel free to connect with me via [Linkedin](https://www.linkedin.com/in/oliveirafrancesca/) or by [e-mail](fran.odc@pm.me) !
+💬 Feel free to connect with me via [Linkedin](https://www.linkedin.com/in/oliveirafrancesca/) or [![Email](https://img.shields.io/badge/Email-me%20now!-blue.svg?logo=gmail&logoColor=white)](mailto:fran.odc@pm.me) !
