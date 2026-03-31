@@ -51,6 +51,7 @@ Collaborated with **QA insights** in SDLC team environments
 
 ## 🗂️ Repository Structure
 
+```
 📁 software-testing-internship-ufrn
 │
 ├── README.md
@@ -60,7 +61,7 @@ Collaborated with **QA insights** in SDLC team environments
 │   └── sample-test-report.pdf
 └── examples/
     └── mock-automation-scripts/
-    
+``` 
 
 ## 🌐 Contact
 
