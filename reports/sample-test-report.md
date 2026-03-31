@@ -29,9 +29,13 @@
 ---
 
 ## 📈 Test Coverage by Module
+
 User Authentication: 95% ✅
+
 User Profile: 87% ⚠️
+
 Dashboard: 82% ⚠️
+
 Reports: 91% ✅
 
 ---
