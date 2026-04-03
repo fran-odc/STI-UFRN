@@ -38,15 +38,15 @@ My work contributed to enhancing the usability and reliability of several instit
 
 ## 🚀 What I Delivered
 
-**Improved system reliability** through comprehensive testing
+- **Improved system reliability** through comprehensive testing
 
-**Reduced defects** via systematic regression testing
+- **Reduced defects** via systematic regression testing
 
-**Enhanced team communication** with clear bug reports
+- **Enhanced team communication** with clear bug reports
 
-**Strong documentation** for future maintenance
+- **Strong documentation** for future maintenance
 
-Collaborated with **QA insights** in SDLC team environments
+- Collaborated with **QA insights** in SDLC team environments
 
 
 ## 🗂️ Repository Structure
