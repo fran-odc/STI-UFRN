@@ -6,60 +6,59 @@ import requests
 class Service:
     def fetch_data(self, url):
         response = requests.get(url)
-        response.raise_for_status()  # Bonne pratique : gérer les erreurs HTTP
+        response.raise_for_status()  # Manage the HTTP errors
         return response.json()
 
 class TestService(unittest.TestCase):
     
     @patch('requests.get')
     def test_fetch_data_success(self, mock_get):
-        """Test du cas nominal avec réponse valide"""
+        """Test the nominal case with valid response"""
         # Arrange
         mock_response = Mock()
-        mock_response.json.return_value = {'key': 'value'}
+        mock_response.json.return_value = {'chave': 'valor'}
         mock_response.status_code = 200
         mock_get.return_value = mock_response
         
         # Act
         service = Service()
-        result = service.fetch_data('https://api.example.com')
+        resultado = service.fetch_data('https://api.exemplo.com.br')
         
         # Assert
-        self.assertEqual(result, {'key': 'value'})
-        mock_get.assert_called_once_with('https://api.example.com')
+        self.assertEqual(resultado, {'chave': 'valor'})
+        mock_get.assert_called_once_with('https://api.exemplo.com.br')
     
     @patch('requests.get')
     def test_fetch_data_http_error(self, mock_get):
-        """Test de la gestion d'erreur HTTP"""
+        """Test HTTP error handling"""
         mock_response = Mock()
         mock_response.status_code = 404
-        mock_response.raise_for_status.side_effect = requests.HTTPError("404 Not Found")
+        mock_response.raise_for_status.side_effect = requests.HTTPError("404 Não Encontrado")
         mock_get.return_value = mock_response
         
         service = Service()
         with self.assertRaises(requests.HTTPError):
-            service.fetch_data('https://api.example.com/notfound')
+            service.fetch_data('https://api.exemplo.com.br/nao-encontrado')
     
     @patch('requests.get')
     def test_fetch_data_invalid_json(self, mock_get):
-        """Test avec JSON invalide"""
+        """Test with invalid JSON"""
         mock_response = Mock()
-        mock_response.json.side_effect = ValueError("Invalid JSON")
+        mock_response.json.side_effect = ValueError("JSON Inválido")
         mock_get.return_value = mock_response
         
         service = Service()
         with self.assertRaises(ValueError):
-            service.fetch_data('https://api.example.com')
+            service.fetch_data('https://api.exemplo.com.br')
     
     @patch('requests.get')
     def test_fetch_data_timeout(self, mock_get):
-        """Test du timeout de connexion"""
-        mock_get.side_effect = requests.Timeout("Connection timeout")
+        """Test connection timeout"""
+        mock_get.side_effect = requests.Timeout("Tempo de conexão esgotado")
         
         service = Service()
         with self.assertRaises(requests.Timeout):
-            service.fetch_data('https://api.example.com')
+            service.fetch_data('https://api.exemplo.com.br')
 
 if __name__ == '__main__':
     unittest.main()
-
